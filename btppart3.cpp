@@ -31,7 +31,7 @@ int  jumps(vector<pair<int,double>>graph[size],int threshold ,vector<pair<int,in
             if (!visited[graph[s][i]] && loss<=threshold) 
             { 
                 visited[graph[s][i].first] = true; 
-                queue.push_back(make_pair(p1.first+1,make_pair<graph[s][i].first,loss +graph[s][i].second)); 
+                queue.push_back(make_pair(p1.first+1,make_pair(graph[s][i].first,loss +graph[s][i].second))); 
             } 
         } 
     } 
